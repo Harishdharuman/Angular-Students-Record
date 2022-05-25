@@ -11,14 +11,16 @@ import { Data } from './data';
 })
 
 export class AppComponent {
+
     name='';
     email='';
     subject1= null;
     subject2= null;
     subject3= null;
-  
+
     public globalData: Data[] = [];
     localData:Data[]=[];
+
     register(registerForm: NgForm) {
       const TempData: Data = {
         name: registerForm.value.fname,
@@ -27,6 +29,7 @@ export class AppComponent {
         subject2: registerForm.value.fsubject2,
         subject3: registerForm.value.fsubject3,
       };
+      
       this.globalData.push(TempData);
       this.clearForm();
       this.clearLocalData();
@@ -56,7 +59,7 @@ export class AppComponent {
       this.globalData.length = 0;
       this.clearLocalData();
     }
-    
+
     //Applying filters
   
     constraint='';
