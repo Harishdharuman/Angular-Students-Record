@@ -29,7 +29,7 @@ export class AppComponent {
         subject2: registerForm.value.fsubject2,
         subject3: registerForm.value.fsubject3,
       };
-      
+
       this.globalData.push(TempData);
       this.clearForm();
       this.clearLocalData();
