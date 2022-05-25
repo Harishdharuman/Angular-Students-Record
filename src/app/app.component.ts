@@ -34,7 +34,7 @@ export class AppComponent {
         this.localData.push(data);
       });
     }
-    //sample changes to check branch
+   
     clearForm() {
       this.name = '';
       this.email = '';
