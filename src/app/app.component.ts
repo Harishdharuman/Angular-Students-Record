@@ -12,7 +12,7 @@ import { Data } from './data';
 
 export class AppComponent {
 
-    name='';
+    name='s';
     email='';
     subject1= null;
     subject2= null;
@@ -23,11 +23,11 @@ export class AppComponent {
 
     register(registerForm: NgForm) {
       const TempData: Data = {
-        name: registerForm.value.fname,
-        email: registerForm.value.femail,
-        subject1: registerForm.value.fsubject1,
-        subject2: registerForm.value.fsubject2,
-        subject3: registerForm.value.fsubject3,
+        name: registerForm.value.form_name,
+        email: registerForm.value.form_email,
+        subject1: registerForm.value.form_subject1,
+        subject2: registerForm.value.form_subject2,
+        subject3: registerForm.value.form_subject3,
       };
 
       this.globalData.push(TempData);
